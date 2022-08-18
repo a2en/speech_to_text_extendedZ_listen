@@ -631,6 +631,8 @@ public class SpeechToTextPlugin :
                             putExtra(RecognizerIntent.EXTRA_PREFER_OFFLINE, onDevice );
                         }
                         putExtra(RecognizerIntent.EXTRA_MAX_RESULTS,10)
+                        putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 4000)
+                        putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS , 10000)
                     }
                 }
             }
